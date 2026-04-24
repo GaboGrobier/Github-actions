@@ -11,6 +11,8 @@ permissions:
   pages: write
   id-token: write
 
+#proteccion frente a multiples ejecuciones simultaneas,
+# espera a que termine la primera para ejecutar la siguiente, no cancela la primera
 concurrency:
   group: "pages"
   cancel-in-progress: false
